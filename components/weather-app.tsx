@@ -56,10 +56,10 @@ export default function WeatherApp(){
             };
             setWeather(weatherData);
         }
-            catch(error){
-                setError("City not found. Please enter a valid city and try again");
-                setWeather(null);
-            }
+           catch {
+              setError("City not found. Please enter a valid city and try again");
+              setWeather(null);
+             }
                 finally{
                     setIsLoading(false);
 
