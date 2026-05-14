@@ -1,15 +1,22 @@
 "use client";
-import { useState, ChangeEvent, FormEvent, use } from "react";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
+
+import { useState, FormEvent } from "react";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+} from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { CloudIcon, MapPinIcon, ThermometerIcon } from "lucide-react";
 import { Button } from "./ui/button";
 
-interface Weatherdata{
-    temperature : number,     
-    unit : string,
-    location : string,
-    description : string
+interface Weatherdata {
+  temperature: number;
+  unit: string;
+  location: string;
+  description: string;
 }
 
 export default function WeatherApp(){
